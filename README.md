@@ -18,7 +18,7 @@ A production-ready REST API for managing restaurant table reservations with inte
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone <https://github.com/raadebomehin/restaurant-reservation-api.git >
 cd restaurant-reservation-api
 
 # 2. Install dependencies
