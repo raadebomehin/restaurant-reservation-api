@@ -6,6 +6,15 @@ A production-ready REST API for managing restaurant table reservations with inte
 **Date:** January 2026  
 **Tech Stack:** Node.js, TypeScript, Express, SQLite, Jest
 
+
+# Restaurant Table Reservation System
+
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Test Coverage](https://img.shields.io/badge/Coverage-85%25-brightgreen.svg)](https://github.com/raadebomehin/restaurant-reservation-api)
+
 ---
 
 ## 🚀 Quick Start
@@ -44,6 +53,32 @@ npm run test:watch      # Run tests in watch mode
 docker-compose up -d    # Start in detached mode
 docker-compose logs -f  # View logs
 docker-compose down     # Stop containers
+```
+
+## 🐳 Docker Deployment
+
+### Quick Start with Docker
+```bash
+# Build and start
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop
+docker-compose down
+```
+
+### Manual Docker Build
+```bash
+# Build image
+docker build -t restaurant-reservation-api .
+
+# Run container
+docker run -p 3000:3000 \
+  -e NODE_ENV=production \
+  -v $(pwd)/data:/app/data \
+  restaurant-reservation-api
 ```
 
 ---
